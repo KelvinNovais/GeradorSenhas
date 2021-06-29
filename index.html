@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="styles/reset.css">
+        <link rel="stylesheet" type="text/css" href="styles/index.css">
+        <link rel="shortcut icon" type="image/png" href="images/favicon_io/favicon-32x32.png">
+
+        <title>Gerador de senhas</title>
+    </head>
+    <body>
+        <header>
+            <h1>kelvin<span class="arr">@</span>GeradorSenhas<span class="white">:</span><span class="til">~</span><span class="white">$</span> <span class="transition">&#9608;</span></h1>
+        </header>
+
+        <main>
+            <label for="QtdSen">Informe o número de senhas a ser gerado: </label>
+            <input type="number" class="numBox" id="QtdSen"><br><br>
+
+            <label for="QtdCar">Informe a quantidade de caracteres em cada senha: </label>
+            <input type="number" class="numBox" id="QtdCar"><br><br>
+
+            <span>[</span><input type="checkbox" class="cb" id="maiusc"><span class="espacoDir">]</span>
+            <label for="maiusc">Incluir letras Maiúsculas</label><br><br>
+
+            <span>[</span><input type="checkbox" class="cb" id="minusc"><span class="espacoDir">]</span>
+            <label for="minusc">Incluir letras minúsculas</label><br><br>
+
+            <span>[</span><input type="checkbox" class="cb" id="num"><span class="espacoDir">]</span>
+            <label for="num">Incluir números</label><br><br>
+
+            <span>[</span><input type="checkbox" class="cb" id="carEsp"><span class="espacoDir">]</span>
+            <label for="carEsp">Incluir caracteres especiais</label><br><br>
+
+            <input type="button" id="gerSen" value="Gerar senha"/><br><br>
+
+            <p>Senha(s) gerada: </p>
+            <textarea id="senhaGerada"></textarea>
+
+            <script type="text/javascript" src="scripts/script.js"></script>
+        </main>
+
+        <footer>
+            <p>
+                Copyright &copy; <script>document.write(new Date().getFullYear());</script>, Kelvin Ribeiro
+            </p>
+            <p>
+                <span class="green">kelvin<span class="arr">@</span>GeradorSenhas<span class="white">:</span><span class="til">~</span><span class="white">$</span> <span class="white">sudo give -me coffee</span></span>
+            </p>
+        </footer>
+    </body>
+</html>

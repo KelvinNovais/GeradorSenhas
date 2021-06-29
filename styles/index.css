@@ -1,0 +1,159 @@
+html{
+    font-family: FiraCode, Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 100;
+    background-color: #191F22;
+    color: white;
+}
+
+@font-face {
+    font-family: FiraCode;
+    src: url(../fonts/FiraCode-Medium.ttf);
+}
+
+header{
+    background-color:  black; /* #0099ff */
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+h1{
+    font-size: 35px;
+    text-align: center;
+    color: #4CE64C;
+    font-weight: 700;
+}
+
+.transition{
+    animation-name: transition;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes transition {
+    0%{
+        color: black;
+    }
+
+    50%{
+        color: white;
+    }
+
+    100%{
+        color: black;
+    }
+}
+
+.arr{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+.til{
+    color: #1147C4;
+}
+
+.white{
+    color: white;
+}
+
+.green{
+    color: #4CE64C;
+}
+
+main{
+    width: 60%;
+    margin: auto;
+}
+
+p{
+    padding-bottom: 10px;
+}
+
+input[type="number"]{
+    border: none;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+input[type="checkbox"]:hover{
+    cursor: pointer;
+}
+
+label:hover{
+    cursor: pointer;
+}
+
+/* https://stackoverflow.com/questions/40123695/after-selecting-check-box-instead-of-tick-symbol-need-x-in-html */
+input[type="checkbox"]{
+    font-weight: 800;
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: #191F22;
+    width: 17px;
+    height: 17px;
+    border: none;
+    position: relative;
+}
+input[type="checkbox"]:checked {
+    background: #191F22;
+}
+input[type="checkbox"]:checked:after {
+    content: "X";
+    color: #4CE64C;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.espacoDir{
+    padding-right: 25px;
+}
+
+.numBox{
+    margin-bottom: 20px;
+}
+
+.cb{
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+}
+
+#gerSen{
+    width: auto;
+    height: auto;
+    padding: 5px 7px;
+    margin: 20px 0 30px 0;
+    font-family: FiraCode, Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: white;
+    background-color: green;
+    border: none;
+}
+
+textarea{
+    width: 100%;
+    min-height: 700px;
+    background-color: black;
+    padding: 40px 30px;
+    color: #4CE64C;
+    font-family: Arial, Helvetica, sans-serif;;
+    border: 0;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+footer{
+    margin-top: 30px;
+    padding: 15px 0;
+    background-color: black;
+}
+
+footer p{
+    text-align: center;
+}
