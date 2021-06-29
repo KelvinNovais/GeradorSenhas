@@ -49,7 +49,7 @@ function gerarSenha() {
         }
         console.log(senhaAtual);
 
-        tabelaSenhas += senhaAtual + '\n'; // Soma-se a própria tabela de senhas, com a senha atual e uma quebra de linha
+        tabelaSenhas += senhaAtual + '\n\n'; // Soma-se a própria "tabela" de senhas, com a senha atual e duas quebras de linha
         document.getElementById("senhaGerada").textContent = tabelaSenhas;
         
         senhaAtual = ""; //Resetando senha atual
