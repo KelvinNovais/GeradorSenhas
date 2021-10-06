@@ -18,10 +18,15 @@ header{
 }
 
 h1{
-    font-size: 35px;
+    font-size: 6vw;
     text-align: center;
     color: #4CE64C;
     font-weight: 700;
+}
+@media screen and (min-width: 900px) {
+	h1 {
+		font-size: 35px;
+	}
 }
 
 .transition{
@@ -63,6 +68,7 @@ h1{
 
 main{
     width: 60%;
+    min-width: 330px;
     margin: auto;
 }
 
@@ -79,6 +85,10 @@ input[type="number"]{
 
 input[type="checkbox"]:hover{
     cursor: pointer;
+}
+
+label{
+    line-height: 1.5;
 }
 
 label:hover{
@@ -124,6 +134,11 @@ input[type="checkbox"]:checked:after {
     margin-bottom: 0px;
 }
 
+.center{
+	display: flex;
+	justify-content: center;
+}
+
 #gerSen{
     width: auto;
     height: auto;
@@ -136,8 +151,13 @@ input[type="checkbox"]:checked:after {
     border: none;
 }
 
+#gerSen:hover{
+	cursor: pointer;
+}
+
 textarea{
-    width: 100%;
+    max-width: 1200px;
+    width: 99%;
     min-height: 700px;
     background-color: black;
     padding: 40px 30px;
